@@ -22,9 +22,9 @@
 
 
     --font-size-h1: 4.2rem;
-    --font-size-h2: 2.3rem;
-    --font-size-h3: 1.75rem;
-    --font-size-h4: 1.05rem;
+    --font-size-h2: 2.2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.02rem;
     --font-size-h5: 0.90rem;
 }
 
@@ -142,6 +142,7 @@ h5 {
 }
 
 .container__background--one {
+    min-height: 35rem;
     background: linear-gradient(to bottom, var(--primary-bg), var(--secondary-bg), var(--light-bg));
 }
 
@@ -330,14 +331,61 @@ h4 {
     padding-block: 1.5rem;
 }
 
+.nav__toggler {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .navbar {
-        height: 10px;
+        height: 0px;
+        z-index: 0;
     }
+
+    .navbar__links {
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .navbar__links.show {
+        display: flex;
+        left: auto;
+        right: 30px;
+        top: 30px;
+        position: fixed;
+        flex-direction: column;
+        width: 120px;
+        height: 300px;
+        gap: 35px;
+        align-items: start;
+        padding-inline: 25px;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
+        opacity: 1;
+        transform: scale(1);
+        z-index: 2;
+    }
+
+    .nav__toggler {
+        padding-inline: 1rem;
+        padding-top: 1rem;
+        border-bottom-left-radius: 20px;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        color: var(--button-text);
+        background-color: var(--navbar-bg);
+        box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
+        z-index: 2;
+    }
+
     .container__background--one {
         height: 100dvh;
         min-height: 45rem;
     }
+
     .container__main {
         display: flex;
         flex-direction: column-reverse;
@@ -353,7 +401,7 @@ h4 {
         max-width: 80%;
     }
     .container__text {
-        width: 100%;
+        width: 95%;
         align-items: center;
         text-align: center; 
     }
@@ -399,4 +447,5 @@ h4 {
     .container__buttons--project {
         padding-bottom: 1rem;
     }
+
 }
