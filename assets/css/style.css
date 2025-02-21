@@ -96,13 +96,13 @@ h5 {
 
 /* navbar */
 .navbar {
-    height: 70px;
+    height: 60px;
 }
 
 .navbar__links {
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60px;
     justify-content: center;
     gap: 8vw;
     position: fixed;
@@ -278,8 +278,9 @@ h4 {
 
 .container__icon {
     width: 100px;
-    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.9));
-
+    height: 100px;
+    object-fit:contain;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
 }
 
 .container__icons {
@@ -337,6 +338,40 @@ h4 {
     cursor: pointer;
 }
 
+.container__certificates__img {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__certificate {
+    display: none;
+    height: 500px;
+    width: 800px;
+}
+
+.container__certificate--active {
+    display: flex;
+}
+
+.container__certificates__icons {
+    height: 80px;
+}
+
+.container__main--certificates {
+    gap: 6vw;
+    height: 30px;
+}
+
+.container__body--certificates {
+    height: 150px;
+}
+
+.container__icons--certificates {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .navbar {
         height: 0px;
@@ -344,7 +379,7 @@ h4 {
     }
 
     .navbar__links {
-        opacity: 0;
+        visibility: hidden;
         z-index: 0;
     }
 
@@ -362,7 +397,7 @@ h4 {
         padding-inline: 25px;
         border-radius: 20px;
         box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
-        opacity: 1;
+        visibility: visible;
         transform: scale(1);
         z-index: 2;
     }
