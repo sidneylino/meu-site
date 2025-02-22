@@ -22,7 +22,7 @@ changeCertificates = (certificate) => {
             break;
 
         case 'pythonando':
-            document.querySelector(".container__certificate--six").classList.add("container__certificate--active");
+            document.querySelector(".container__certificate--five").classList.add("container__certificate--active");
             document.querySelector(".container__icon--two").classList.add("container__background");
             break;      
 
