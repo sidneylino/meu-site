@@ -559,13 +559,7 @@ h4 {
 /* effects */
 
 .scale-zoom {
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.scale-zoom {
-    transform: scale(0);
+    transform: scale(0.7);
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
@@ -597,3 +591,5 @@ h4 {
     opacity: 1;
     transform: translateX(0); 
 }
+
+
