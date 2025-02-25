@@ -5,7 +5,7 @@ toggleMenu = () => {
 }
 
 // animated effects
-document.querySelectorAll('.scale-zoom').forEach((el) => {
+document.querySelectorAll('.scale-zoom-home').forEach((el) => {
     el.classList.add('active');
 })
 
