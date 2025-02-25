@@ -377,7 +377,7 @@ h4 {
 
 .container__certificate {
     width: 90%;
-    height: 50%;
+    height: auto;
     visibility: hidden;
     position: absolute;
     max-height: 35rem;
@@ -570,13 +570,13 @@ h4 {
 }
 
 .slide-right {
-    transform: translateX(30px);
+    transform: translateX(20px);
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
 .slide-left {
-    transform: translateX(-30px);
+    transform: translateX(-20px);
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
