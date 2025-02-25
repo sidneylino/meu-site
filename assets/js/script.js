@@ -12,7 +12,7 @@ document.querySelectorAll('.scale-zoom').forEach((el) => {
 
 function activeInScrollElement() {
     document.querySelectorAll('.slide-right, .slide-left').forEach((el) => {
-        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+        if (el.getBoundingClientRect().top < window.innerHeight - 120) {
             el.classList.add('finish');  
         } else {
             el.classList.remove('finish')
