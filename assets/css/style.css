@@ -377,7 +377,7 @@ h4 {
 
 .container__certificate {
     width: 90%;
-    height: auto;
+    height: 0;
     visibility: hidden;
     position: absolute;
     max-height: 35rem;
@@ -558,15 +558,10 @@ h4 {
 
 /* effects */
 
-.scale-zoom-home {
+.scale-zoom {
     transform: scale(0);
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.scale-zoom-home.active {
-    transform: scale(1);
-    opacity: 1;
 }
 
 .scale-zoom {
@@ -578,6 +573,12 @@ h4 {
 .scale-zoom.active {
     transform: scale(1);
     opacity: 1;
+}
+
+.no-scale-zoom {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .slide-right {

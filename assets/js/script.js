@@ -5,7 +5,7 @@ toggleMenu = () => {
 }
 
 // animated effects
-document.querySelectorAll('.scale-zoom-home').forEach((el) => {
+document.querySelectorAll('.scale-zoom').forEach((el) => {
     el.classList.add('active');
 })
 
@@ -28,6 +28,7 @@ changeCertificates = (certificate) => {
     allCertificates.forEach(el => {
         el.classList.remove("container__certificate--active");
         el.classList.remove("active");
+        el.classList.remove("no-scale-zoom");
     });
 
     const allCertificatesIcons = document.querySelectorAll(".container__icon");
