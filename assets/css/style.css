@@ -557,22 +557,7 @@ h4 {
 
 /* effects */
 
-.scale-zoom {
-    transform: scale(0.7);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
 
-.scale-zoom.active {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.no-scale-zoom {
-    transform: scale(1)!important;
-    opacity: 1;
-    transition: none!important;
-}
 
 .slide-right {
     transform: translateX(20px);
