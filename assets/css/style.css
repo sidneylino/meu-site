@@ -437,12 +437,11 @@ h4 {
 
     .navbar {
         height: 0px;
-        z-index: 0;
     }
 
     .navbar__links {
+        height: 0px;
         visibility: hidden;
-        z-index: 0;
     }
 
     .navbar__links.show {
