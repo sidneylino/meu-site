@@ -143,6 +143,7 @@ h5 {
 }
 
 .container__background--one {
+    height: 90dvh;
     min-height: 35rem;
     background: linear-gradient(to bottom, var(--primary-bg), var(--secondary-bg), var(--light-bg));
 }
@@ -214,7 +215,7 @@ h4 {
     width: 80%;
     gap: var(--gap);
     align-items: center;
-    height: 90dvh;
+
 }
 
 .container__main--project {
@@ -348,7 +349,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 100vh;
     min-height: 30rem;
     background-color: var(--light-bg);
     padding-bottom: 3rem;
@@ -527,8 +528,11 @@ h4 {
         height: 50%;
         min-height: 20%;
     }
+    .container__image--projectspotify {
+        width: 50%;
+    }
+
     .container__main--project {
-        height: 85dvh;
         min-height: 40rem;
         margin-block: 1rem;
     }
