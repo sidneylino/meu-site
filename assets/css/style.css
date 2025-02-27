@@ -107,7 +107,7 @@ h5 {
     justify-content: center;
     gap: 8vw;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
     box-shadow: 0 4px 6px var(--shadow-color);
     list-style: none;
