@@ -479,9 +479,6 @@ h4 {
         z-index: 2;
     }
 
-    .container__background--one {
-        min-height: 49rem;
-    }
 
     .container__main {
         display: flex;
