@@ -479,7 +479,7 @@ h4 {
     }
 
     .container__background--one {
-        height: 100vh;
+        height: 100svh;
         min-height: 49rem;
     }
 
