@@ -481,7 +481,7 @@ h4 {
 
     .container__background--one {
         height: 100dvh;
-        min-height: 49rem;
+        padding-bottom: 7rem;
     }
 
     .container__main {
