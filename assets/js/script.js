@@ -73,11 +73,3 @@ changeCertificates = (certificate) => {
             document.querySelector(".container__icon--four").classList.add("container__background");
     }
 }
-
-function ajustarAltura() {
-    document.documentElement.style.setProperty('--altura-real', `${window.innerHeight}px`);
-  }
-  
-  window.addEventListener('resize', ajustarAltura);
-  ajustarAltura();
-  

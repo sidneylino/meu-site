@@ -437,11 +437,12 @@ h4 {
     .container__pointer--five { grid-column: 4 / 6; }
 
     .navbar {
-        height: 0px;
+        height: 60px;
+        background-color: var(--navbar-bg);
     }
 
     .navbar__links {
-        height: 0px;
+        height: 60px;
         visibility: hidden;
     }
 
@@ -479,7 +480,7 @@ h4 {
     }
 
     .container__background--one {
-        height: var(--altura-real);
+        height: calc(100dvh - 60px);
         min-height: 49rem;
     }
 
