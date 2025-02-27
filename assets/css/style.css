@@ -143,8 +143,7 @@ h5 {
 }
 
 .container__background--one {
-    height: 90vh;
-    min-height: 35rem;
+    height: 40rem;
     background: linear-gradient(to bottom, var(--primary-bg), var(--secondary-bg), var(--light-bg));
 }
 
