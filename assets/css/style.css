@@ -437,13 +437,12 @@ h4 {
     .container__pointer--five { grid-column: 4 / 6; }
 
     .navbar {
-        height: 60px;
+        height: 0;
         background-color: var(--navbar-bg);
     }
 
     .navbar__links {
-        height: 60px;
-        visibility: hidden;
+        display: none;
     }
 
     .navbar__links.show {
